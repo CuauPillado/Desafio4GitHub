@@ -16,10 +16,12 @@
 
 <body>
     <header>
-        <nav>
-            <!--Decidí poner en comentario el H1 texto ( <h1> Cuauhtémoc Juárez </h1> ) para mostrar el logo y ocultar el texto. No sé si sea correcto de esa forma. -->
-            <h1> <img src="../imagenes/Logo.png" class="logoSitio" alt="LogoSitio"> </h1>
-            <ul>
+        <nav class="navegadorSitio">
+            <div>
+                <h1> <img src="../imagenes/Logo.png" class="logoSitio" alt="LogoSitio"> </h1>
+            </div>
+            <nav class="navegadorSitio">
+                <ul>
                 <li><a href="../index.html"> Index </a></li>
                 <li><a href="./acerca.html"> Acerca de mí </a></li>
                 <li><a href="./proyectos.html"> Mis proyectos </a></li>
@@ -29,42 +31,43 @@
         </nav>
     </header>
     <!-- fin del header -->
-    <main>
+    <section class="contenedor">
         <h2>Contacto</h2>
         <form class="formularioUno">
             <div>
                 <label for="nombreApellido">Nombre y Apellido:</label>
                 <input type="text" id="nombreApellido" placeholder="Escribe tu nombre completo">
+                <input type="submit" value="Enviar">
             </div>
             <div>
                 <label for="emailContacto">Correo electrónico:</label>
                 <input type="email" id="emailContacto" placeholder="Escribe tu correo electrónico">
+                <input type="submit" value="Enviar">
             </div>
         </form>
 
         <form class="formularioDos">
             <div>
-                <label>Mensaje:</label>
+                <label for="mensajeAyuda">Mensaje:</label>
             </div>
             <div>
-                <textarea placeholder="¿Cómo puedo ayudarte?"></textarea>
+                <textarea id="mensajeAyuda" placeholder="¿Cómo puedo ayudarte?"></textarea>
             </div>
             <div>
                 <input type="submit" value="Enviar">
             </div>
         </form>
-    </main>
-    <footer>
-            <!--Se me cuela el background color y el border del párrafo en el footer y por más que revisé no logré ubicar el por qué. Me ha costado entender bien cómo funciona CSS pero seguiré practicando para entender mejor, para la primera entrega del proyecto final-->
+    </section>
+    <footer id="footer">
+        <nav>
             <ul>
-                <li><a href="https://www.facebook.com/cuaupillado" target="_blank"> <img src="../imagenes/LogoFb.png"
-                            class="logoFooter" alt="Facebook"> </a></li>
-                <li><a href="https://www.instagram.com/cuaupillado/" target="_blank"> <img
-                            src="../imagenes/LogoInstagram.png" class="logoFooter" alt="instagram"> </a></li>
-                <li><a href="https://www.linkedin.com/in/cuaupillado/" target="_blank"> <img
-                            src="../imagenes/LogoLinkedin.png" class="logoFooter" alt="Linkedin"> </a></li>
+                <li> <i class="fab fa-facebook"></i> <a href="https://www.facebook.com/cuaupillado" target="_blank"> Facebook </a></li>
+                <li> <i class="fab fa-instagram"></i> <a href="https://www.instagram.com/cuaupillado/" target="_blank"> Instagram </a></li>
+                <li> <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/cuaupillado/" target="_blank"> Linkedin </a></li>
             </ul>
+        </nav>
     </footer>
+    <script src="https://kit.fontawesome.com/ac484d389e.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

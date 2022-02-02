@@ -18,9 +18,10 @@
 
 <body>
     <header>
-        <nav>
-            <!--Decidí poner en comentario el H1 texto ( <h1> Cuauhtémoc Juárez </h1> ) para mostrar el logo y ocultar el texto. No sé si sea correcto de esa forma. -->
+        <div>
             <h1> <img src="./imagenes/Logo.png" class="logoSitio" alt="LogoSitio"> </h1>
+        </div>
+        <nav class="navegadorSitio">
             <ul>
                 <li><a href="index.html"> Index </a></li>
                 <li><a href="./paginas/acerca.html"> Acerca de mí </a></li>
@@ -32,30 +33,30 @@
     </header>
     <!-- fin del header -->
     <main>
-        <section>
-            <img src="./imagenes/CuauhtemocPillado.jpg" class="fotoCuau" alt="Foto Cuauhtemoc Pillado">
-        </section>
-        <section>
-            <h2>Cuauhtémoc Juárez Pillado</h2>
-            <p>Soy comunicólogo con experiencia en <a class="trabajo"> fotografía y realización audiovisual </a> (he
+        <section id= "presentacion">
+            <div class="contenedor"> 
+                <img src="./imagenes/CuauhtemocPillado.jpg" class="fotoCuau" alt="Foto Cuauhtemoc Pillado">
+            </div>
+            <div class="contenedor">
+                <h2>Cuauhtémoc Juárez Pillado</h2>
+            <p>Soy comunicólogo con experiencia en <span class="trabajo"> fotografía y realización audiovisual </span> (he
                 dirigido cortometrajes,
                 documentales y videoclips), además de colaborar en algunos medios digitales.</p>
             <p>Curioso y siempre en busca de seguir desarrollándome, quiero aportar toda mi experiencia audiovisual en
-                campos como el <a class="trabajo"> Desarrollo Web </a> y el <a class="trabajo"> Diseño UX. </a> </p>
+                campos como el <span class="trabajo"> Desarrollo Web </span> y el <span class="trabajo"> Diseño UX. </spa> </p>
+            </div>
         </section>
     </main>
-    <footer>
-        <!--Se me cuela el background color y el border del párrafo en el footer y por más que revisé no logré ubicar el por qué. Me ha costado entender bien cómo funciona CSS pero seguiré practicando para entender mejor, para la primera entrega del proyecto final-->
-        <ul>
-            <li><a href="https://www.facebook.com/cuaupillado" target="_blank"> <img src="./imagenes/LogoFb.png"
-                        class="logoFooter" alt="Facebook"> </a></li>
-            <li><a href="https://www.instagram.com/cuaupillado/" target="_blank"> <img
-                        src="./imagenes/LogoInstagram.png" class="logoFooter" alt="instagram"> </a></li>
-            <li><a href="https://www.linkedin.com/in/cuaupillado/" target="_blank"> <img
-                        src="./imagenes/LogoLinkedin.png" class="logoFooter" alt="Linkedin"> </a></li>
-        </ul>
-
+    <footer id="footer">
+        <nav>
+            <ul>
+                <li> <i class="fab fa-facebook"></i> <a href="https://www.facebook.com/cuaupillado" target="_blank"> Facebook </a></li>
+                <li> <i class="fab fa-instagram"></i> <a href="https://www.instagram.com/cuaupillado/" target="_blank"> Instagram </a></li>
+                <li> <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/cuaupillado/" target="_blank"> Linkedin </a></li>
+            </ul>
+        </nav>
     </footer>
+    <script src="https://kit.fontawesome.com/ac484d389e.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
